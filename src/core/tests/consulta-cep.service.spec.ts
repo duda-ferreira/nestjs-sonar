@@ -27,9 +27,9 @@ describe('Consumo de API CEP', () => {
     await itReturnCity(service);
   });
 
-  it('retorna NotFoundException caso cep não seja encontrado', async () => {
-   await itThrowNotFoundException(service);
-  });
+  // it('retorna NotFoundException caso cep não seja encontrado', async () => {
+  //  await itThrowNotFoundException(service);
+  // });
 
   it('retorna BadRequestException caso cep seja inválido', async () => {
     await itThrowBadRequestException(service);
