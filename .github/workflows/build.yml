@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - run: npm install
       - run: npm run test:cov
       - run: npm run test:e2e:cov
       - name: SonarCloud Scan
